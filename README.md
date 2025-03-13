@@ -7,4 +7,4 @@ Sobre mim:
 Sobre meu Projeto:
 
           Trata-se de uma aplicação Web inclusiva para crianças portadoras  do TEA (Transtorno Espectro Autista )
-a aplicação tem por objetivo ser uma página  que localiza parques , praças, evento , academias que tenham acesso e esportes adaptados para crianças com necessidades especiais.
+a aplicação tem por objetivo ser uma Página Web Inclusiva  que localiza parques , praças, eventos e academias que tenham acesso e esportes adaptados para crianças com necessidades especiais.
