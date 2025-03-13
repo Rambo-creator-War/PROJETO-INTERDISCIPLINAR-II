@@ -1,4 +1,8 @@
 ![autismo-1-768x513](https://github.com/user-attachments/assets/9df0fb29-e422-437f-bf45-e4d434144521)          
+
+
+    ''JUNTOS NO ESPORTE,JUNTOS NA VIDA""    
+      
 👨‍🎓 Sobre mim:  
 Meu nome é Rodrigo de Lima, estudante do 5º período de Gestão da Tecnologia da Informação no Instituto Federal do Paraná (IFPR) – Campus Pinhais, 
 Minha atuação acadêmica está voltada para o desenvolvimento de soluções tecnológicas inclusivas, com foco em acessibilidade digital e usabilidade.
