@@ -15,7 +15,8 @@ A aplicação oferecerá uma interface intuitiva que irá permitir a busca por p
 crianças com necessidades especiais , no caso especifico Autismo.
 Além disso, o sistema integrará recursos de geolocalização, avaliações de usuários e filtros de acessibilidade, garantindo uma experiência personalizada e segura para as famílias.
   
-🎯 Status do Projeto
+🎯 Status do Projeto  
+
 A Iniciar
   
 🌏 Objetivos
