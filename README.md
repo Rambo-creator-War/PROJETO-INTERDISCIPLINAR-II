@@ -6,7 +6,8 @@
     ''JUNTOS NO ESPORTE,JUNTOS NA VIDA""    
       
 👨‍🎓 Sobre mim:  
-Meu nome é Rodrigo de Lima, estudante do 5º período de Gestão da Tecnologia da Informação no Instituto Federal do Paraná (IFPR) – Campus Pinhais, 
+Rodrigo de Lima  
+Estudante do 5º período de Gestão da Tecnologia da Informação no Instituto Federal do Paraná (IFPR) – Campus Pinhais, 
 Minha atuação acadêmica está voltada para o desenvolvimento de soluções tecnológicas inclusivas, com foco em acessibilidade digital e usabilidade.
     
 Sobre meu projeto:    
