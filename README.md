@@ -26,7 +26,8 @@ Promover inclusão e desenvolvimento social
 Oferecer uma plataforma acessível e intuitiva
 Garantir conformidade com a LGPD
   
-🖥 Tecnologias Utilizadas
+🖥 Tecnologias que serão Utilizadas:  
+
 Front-end: HTML5, CSS3, JavaScript
 Back-end: Node.js e MySQL
 Segurança: Autenticação e criptografia de dados
