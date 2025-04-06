@@ -29,8 +29,10 @@ Garantir conformidade com a LGPD
 🖥 Tecnologias que serão Utilizadas:  
 
 Front-end: HTML5, CSS3, JavaScript
-Back-end: Node.js e MySQL
-Segurança: Autenticação e criptografia de dados
+Back-end: Node.js e MySQL  
+
+Segurança: Autenticação e criptografia de dados.  
+
 Acessibilidade: Suporte a leitores de tela, alto contraste, fontes ajustáveis
 
 
