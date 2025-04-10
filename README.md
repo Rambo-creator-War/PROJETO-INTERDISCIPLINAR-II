@@ -51,11 +51,5 @@ ABAIXO
 
 LINK´S :
 
-JIRA :   https://rlima75998.atlassian.net/jira/software/projects/IP/boards/2/backlog
-
-
-
-
-
-
+JIRA :  https://rlima75998.atlassian.net/jira/software/projects/NP212/boards/36/backlog
 
