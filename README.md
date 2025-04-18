@@ -65,22 +65,6 @@ Git e GitHub
 
 
 
-📁 Estrutura do Repositório
-
-
-📦 PROJETO-INTERDISCIPLINAR-II
-├── 📁 /src               Código-fonte da aplicação (PHP, HTML, CSS, JS)
-│   ├── index.php
-│   ├── styles/
-│   ├── scripts/
-│   └── pages/
-├── 📁 /documentos        Arquivos da documentação (backlog, cronograma, etc)
-│   ├── backlog.docx
-│   ├── cronograma.pdf
-│   └── roadmap.docx
-├── 📄 README.md
-└── 📄 LICENSE.md
-
   
 
 
