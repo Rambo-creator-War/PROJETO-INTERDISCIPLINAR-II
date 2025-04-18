@@ -26,18 +26,60 @@ Promover inclusão e desenvolvimento social
 Oferecer uma plataforma acessível e intuitiva
 Garantir conformidade com a LGPD
   
-🖥 Tecnologias que serão Utilizadas:  
 
-Front-end: HTML5, CSS3, JavaScript
-Back-end: Node.js e MySQL  
 
-Segurança: Autenticação e criptografia de dados.  
 
 Acessibilidade: Suporte a leitores de tela, alto contraste, fontes ajustáveis
 
 
 
 
+📚 PROJETO INTERDISCIPLINAR II
+
+Projeto acadêmico desenvolvido como parte da disciplina de Projeto Interdisciplinar II. O objetivo é aplicar os conhecimentos de front-end, back-end e banco de dados para criação de uma aplicação web funcional.
+
+
+
+🚀 Objetivo
+
+Desenvolver uma aplicação web utilizando tecnologias de desenvolvimento full stack, com foco em organização de código, usabilidade e integração com banco de dados MySQL.
+
+
+🛠️ Tecnologias Utilizadas
+
+💻 Front-end:
+HTML5
+CSS3
+JavaScript
+
+⚙️ Back-end:
+PHP
+
+🗄️ Banco de Dados:
+MySQL (modelado e gerenciado via MySQL Workbench)
+
+🛠️ Ferramentas e Plataformas:
+VS Code
+XAMPP / WAMP (para ambiente local)
+Git e GitHub
+
+
+
+📁 Estrutura do Repositório
+
+
+📦 PROJETO-INTERDISCIPLINAR-II
+├── 📁 /src               Código-fonte da aplicação (PHP, HTML, CSS, JS)
+│   ├── index.php
+│   ├── styles/
+│   ├── scripts/
+│   └── pages/
+├── 📁 /documentos        Arquivos da documentação (backlog, cronograma, etc)
+│   ├── backlog.docx
+│   ├── cronograma.pdf
+│   └── roadmap.docx
+├── 📄 README.md
+└── 📄 LICENSE.md
 
   
 
