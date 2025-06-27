@@ -1,3 +1,12 @@
+
+
+
+
+-- ULTIMO BANCO ATUALZIADO EM  - 27 / 06 / 2025 
+-- TUDO FUNCIONANDO - CORRETAMENTE  , NESTE AQUI - PELO MENOS OS PRINCIPAIS
+
+
+
 -- Criação do banco de dados
 CREATE DATABASE IF NOT EXISTS sistema_profissionais_saude 
 CHARACTER SET utf8mb4 
@@ -294,3 +303,111 @@ CREATE TABLE categorias_post01 (
 SHOW TABLES;
 
 select * from usuarios
+
+
+
+ALTER TABLE profissionais ADD COLUMN area_atuacao VARCHAR(100);
+
+UPDATE profissionais 
+SET cpf = REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(cpf, '.', ''), '-', ''), '/', ''), ' ', ''), ',', '');
+
+
+-- Remove coluna autor_id e chave estrangeira antiga (se existir)
+ALTER TABLE posts DROP FOREIGN KEY IF EXISTS fk_posts_autor;
+ALTER TABLE posts DROP COLUMN autor_id;
+
+-- Adiciona coluna usuario_id com FK para usuarios.id
+ALTER TABLE posts ADD COLUMN usuario_id INT NOT NULL;
+
+ALTER TABLE posts
+ADD CONSTRAINT fk_posts_usuario FOREIGN KEY (usuario_id) REFERENCES usuarios(id) ON DELETE CASCADE;
+
+
+
+
+SHOW CREATE TABLE posts;
+
+
+SELECT CONSTRAINT_NAME 
+FROM information_schema.KEY_COLUMN_USAGE 
+WHERE TABLE_SCHEMA = 'sistema_profissionais_saude' 
+  AND TABLE_NAME = 'posts' 
+  AND REFERENCED_TABLE_NAME IS NOT NULL;
+  
+  ALTER TABLE posts DROP FOREIGN KEY nome_da_fk;
+  ALTER TABLE posts DROP COLUMN autor_id;
+  
+  
+  
+  ALTER TABLE posts ADD COLUMN usuario_id INT NOT NULL;
+
+ALTER TABLE posts
+ADD CONSTRAINT fk_posts_usuario FOREIGN KEY (usuario_id) REFERENCES usuarios(id) ON DELETE CASCADE;
+
+INSERT INTO categorias (nome) VALUES 
+('Dicas para Pais'),
+('Terapias e Intervenções'),
+('Saúde e Bem-Estar'),
+('Atividades Inclusivas'),
+('Educação e Desenvolvimento'),
+('Direitos e Acessibilidade'),
+('Tecnologia Assistiva'),
+('Notícias e Atualizações'),
+('Depoimentos de Pais e Profissionais');
+
+
+SHOW COLUMNS FROM usuarios;
+
+
+CREATE TABLE IF NOT EXISTS usuario_agendamento (
+    usuario_id INT NOT NULL,
+    agendamento_id INT NOT NULL,
+    PRIMARY KEY (usuario_id, agendamento_id),
+    CONSTRAINT fk_usuario
+        FOREIGN KEY (usuario_id) REFERENCES usuarios(id) ON DELETE CASCADE,
+    CONSTRAINT fk_agendamento
+        FOREIGN KEY (agendamento_id) REFERENCES agendamentos(id) ON DELETE CASCADE
+) ENGINE=InnoDB;
+
+
+SELECT DATABASE();
+
+SHOW TABLES;
+
+SHOW CREATE TABLE usuarios;
+
+SHOW CREATE TABLE agendamentos;
+
+SHOW TABLE STATUS WHERE Name IN ('usuarios', 'agendamentos');
+
+CHECK TABLE usuarios;
+
+
+SHOW TABLE STATUS WHERE Name = 'usuarios';
+
+ALTER TABLE usuarios ENGINE=InnoDB;
+
+ALTER TABLE agendamentos ADD COLUMN local VARCHAR(255) NULL;
+
+ALTER TABLE usuarios ADD COLUMN foto VARCHAR(255) DEFAULT NULL COMMENT 'Caminho da foto do usuário';
+
+
+
+SELECT a.id, p.nome AS profissional_nome, p.especialidade, a.data_agendamento, a.horario
+FROM usuario_agendamento ua
+INNER JOIN agendamentos a ON ua.agendamento_id = a.id
+INNER JOIN profissionais p ON a.profissional_id = p.id
+WHERE ua.usuario_id = 15 AND a.data_agendamento >= CURDATE()
+ORDER BY a.data_agendamento ASC, a.horario ASC;
+
+SELECT * FROM usuario_agendamento;
+
+SELECT * FROM agendamentos WHERE id = 4;
+
+INSERT INTO usuario_agendamento (usuario_id, agendamento_id) VALUES (13, ID_DO_AGENDAMENTO);
+SELECT id, nome_crianca, data_agendamento FROM agendamentos LIMIT 10;
+
+ALTER TABLE agendamentos ADD COLUMN usuario_id INT NULL;
+ALTER TABLE agendamentos 
+ADD CONSTRAINT fk_agendamento_usuario FOREIGN KEY (usuario_id) REFERENCES usuarios(id);
+
