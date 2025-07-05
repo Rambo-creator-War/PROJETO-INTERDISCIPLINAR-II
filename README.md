@@ -55,8 +55,8 @@ Desenvolver uma aplicação web utilizando tecnologias de desenvolvimento full s
 🛠️ Tecnologias Utilizadas
 
 💻 Front-end:
-HTML5
-CSS3
+HTML5 ,
+CSS3, 
 JavaScript
 
 ⚙️ Back-end:
