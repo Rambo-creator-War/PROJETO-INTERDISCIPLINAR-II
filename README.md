@@ -67,8 +67,8 @@ MySQL (modelado e gerenciado via MySQL Workbench)
 
 🛠️ Ferramentas e Plataformas:
 VS Code
-XAMPP / WAMP (para ambiente local)
-Git e GitHub
+ WAMP (para ambiente local)
+ GitHub
 
 
 
